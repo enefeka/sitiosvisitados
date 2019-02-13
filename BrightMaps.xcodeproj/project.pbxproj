@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D3ACFCB2213A06F0083953F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3ACFCA2213A06F0083953F /* Config.swift */; };
+		7D3ACFCE2213A31B0083953F /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3ACFCD2213A31B0083953F /* Localize.swift */; };
+		7D3ACFD02213A8E40083953F /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3ACFCF2213A8E40083953F /* SignInVC.swift */; };
+		7D764ED62214AE7300A6C70E /* RecoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D764ED52214AE7300A6C70E /* RecoverVC.swift */; };
+		7DB3606E2213C3F60092D453 /* SpotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB3606D2213C3F60092D453 /* SpotTableViewCell.swift */; };
 		7DE204EF22079DAD00E8BE67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE204EE22079DAD00E8BE67 /* AppDelegate.swift */; };
-		7DE204F122079DAD00E8BE67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE204F022079DAD00E8BE67 /* ViewController.swift */; };
 		7DE204F422079DAD00E8BE67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE204F222079DAD00E8BE67 /* Main.storyboard */; };
 		7DE204F622079DAE00E8BE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE204F522079DAE00E8BE67 /* Assets.xcassets */; };
 		7DE204F922079DAE00E8BE67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE204F722079DAE00E8BE67 /* LaunchScreen.storyboard */; };
+		7DEB4D7922138165003C1A29 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB4D7822138165003C1A29 /* RegisterVC.swift */; };
+		7DEB4D7B221386B0003C1A29 /* AddPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB4D7A221386B0003C1A29 /* AddPlaceVC.swift */; };
+		7DEB4D7D22138725003C1A29 /* SpotsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB4D7C22138725003C1A29 /* SpotsListVC.swift */; };
+		7DEB4D7F22138843003C1A29 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB4D7E22138843003C1A29 /* MapVC.swift */; };
+		7DEB4D81221388AD003C1A29 /* SpotInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB4D80221388AD003C1A29 /* SpotInfoVC.swift */; };
+		D2768793CA092CD8820F638C /* Pods_BrightMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C0421A8B24647FFBD247B0 /* Pods_BrightMaps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D3ACFCA2213A06F0083953F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		7D3ACFCD2213A31B0083953F /* Localize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		7D3ACFCF2213A8E40083953F /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		7D764ED52214AE7300A6C70E /* RecoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverVC.swift; sourceTree = "<group>"; };
+		7DB3606D2213C3F60092D453 /* SpotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotTableViewCell.swift; sourceTree = "<group>"; };
 		7DE204EB22079DAD00E8BE67 /* BrightMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrightMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE204EE22079DAD00E8BE67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DE204F022079DAD00E8BE67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7DE204F322079DAD00E8BE67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DE204F522079DAE00E8BE67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DE204F822079DAE00E8BE67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DE204FA22079DAE00E8BE67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEB4D7822138165003C1A29 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		7DEB4D7A221386B0003C1A29 /* AddPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceVC.swift; sourceTree = "<group>"; };
+		7DEB4D7C22138725003C1A29 /* SpotsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsListVC.swift; sourceTree = "<group>"; };
+		7DEB4D7E22138843003C1A29 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		7DEB4D80221388AD003C1A29 /* SpotInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotInfoVC.swift; sourceTree = "<group>"; };
+		A2886F157F9FC37C6BD4FF48 /* Pods-BrightMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightMaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BrightMaps/Pods-BrightMaps.debug.xcconfig"; sourceTree = "<group>"; };
+		D3C0421A8B24647FFBD247B0 /* Pods_BrightMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrightMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED56282D16692044A07EB3A1 /* Pods-BrightMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrightMaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrightMaps/Pods-BrightMaps.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2768793CA092CD8820F638C /* Pods_BrightMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F74E930654F7BEE6BA2A29C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2886F157F9FC37C6BD4FF48 /* Pods-BrightMaps.debug.xcconfig */,
+				ED56282D16692044A07EB3A1 /* Pods-BrightMaps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D3ACFCC2213A2F90083953F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7D3ACFCA2213A06F0083953F /* Config.swift */,
+				7D3ACFCD2213A31B0083953F /* Localize.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		7DE204E222079DAD00E8BE67 = {
 			isa = PBXGroup;
 			children = (
 				7DE204ED22079DAD00E8BE67 /* BrightMaps */,
 				7DE204EC22079DAD00E8BE67 /* Products */,
+				4F74E930654F7BEE6BA2A29C /* Pods */,
+				E4D3716476BB1DAF671455CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +97,38 @@
 		7DE204ED22079DAD00E8BE67 /* BrightMaps */ = {
 			isa = PBXGroup;
 			children = (
+				7D3ACFCC2213A2F90083953F /* Settings */,
+				7DEB4D75221380D9003C1A29 /* Views */,
 				7DE204EE22079DAD00E8BE67 /* AppDelegate.swift */,
-				7DE204F022079DAD00E8BE67 /* ViewController.swift */,
 				7DE204F222079DAD00E8BE67 /* Main.storyboard */,
 				7DE204F522079DAE00E8BE67 /* Assets.xcassets */,
 				7DE204F722079DAE00E8BE67 /* LaunchScreen.storyboard */,
 				7DE204FA22079DAE00E8BE67 /* Info.plist */,
 			);
 			path = BrightMaps;
+			sourceTree = "<group>";
+		};
+		7DEB4D75221380D9003C1A29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D3ACFCF2213A8E40083953F /* SignInVC.swift */,
+				7DEB4D7822138165003C1A29 /* RegisterVC.swift */,
+				7DEB4D7A221386B0003C1A29 /* AddPlaceVC.swift */,
+				7DEB4D7C22138725003C1A29 /* SpotsListVC.swift */,
+				7DEB4D7E22138843003C1A29 /* MapVC.swift */,
+				7DEB4D80221388AD003C1A29 /* SpotInfoVC.swift */,
+				7DB3606D2213C3F60092D453 /* SpotTableViewCell.swift */,
+				7D764ED52214AE7300A6C70E /* RecoverVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4D3716476BB1DAF671455CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3C0421A8B24647FFBD247B0 /* Pods_BrightMaps.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DE204FD22079DAE00E8BE67 /* Build configuration list for PBXNativeTarget "BrightMaps" */;
 			buildPhases = (
+				C3700EEE8D8C1469BACCF881 /* [CP] Check Pods Manifest.lock */,
 				7DE204E722079DAD00E8BE67 /* Sources */,
 				7DE204E822079DAD00E8BE67 /* Frameworks */,
 				7DE204E922079DAD00E8BE67 /* Resources */,
+				3BDBB9E993DFD319D2CCD5F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +199,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BDBB9E993DFD319D2CCD5F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BrightMaps/Pods-BrightMaps-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CPAlertViewController/CPAlertViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CPAlertViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BrightMaps/Pods-BrightMaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3700EEE8D8C1469BACCF881 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrightMaps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7DE204E722079DAD00E8BE67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DE204F122079DAD00E8BE67 /* ViewController.swift in Sources */,
+				7D3ACFCE2213A31B0083953F /* Localize.swift in Sources */,
+				7D3ACFCB2213A06F0083953F /* Config.swift in Sources */,
 				7DE204EF22079DAD00E8BE67 /* AppDelegate.swift in Sources */,
+				7DB3606E2213C3F60092D453 /* SpotTableViewCell.swift in Sources */,
+				7D3ACFD02213A8E40083953F /* SignInVC.swift in Sources */,
+				7DEB4D7B221386B0003C1A29 /* AddPlaceVC.swift in Sources */,
+				7DEB4D7F22138843003C1A29 /* MapVC.swift in Sources */,
+				7DEB4D7D22138725003C1A29 /* SpotsListVC.swift in Sources */,
+				7D764ED62214AE7300A6C70E /* RecoverVC.swift in Sources */,
+				7DEB4D81221388AD003C1A29 /* SpotInfoVC.swift in Sources */,
+				7DEB4D7922138165003C1A29 /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +409,7 @@
 		};
 		7DE204FE22079DAE00E8BE67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2886F157F9FC37C6BD4FF48 /* Pods-BrightMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +427,7 @@
 		};
 		7DE204FF22079DAE00E8BE67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED56282D16692044A07EB3A1 /* Pods-BrightMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module CPAlertViewController {
+  umbrella header "CPAlertViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
