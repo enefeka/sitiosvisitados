@@ -3,14 +3,30 @@ import UIKit
 import Alamofire
 import SwiftSpinner
 import CPAlertViewController
+import MapKit
 
 class AddPlaceVC: UIViewController {
     @IBOutlet weak var spotName: UITextField!
     @IBOutlet weak var spotDescription: UITextField!
     @IBOutlet weak var startDate: UIDatePicker!
     @IBOutlet weak var endDate: UIDatePicker!
+    @IBOutlet weak var mkMap: MKMapView!
     
+    var coordinates : CLLocationCoordinate2D!
+    var locationManager = CLLocationManager()
+    var myPosition = CLLocationCoordinate2D()
   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        coordinates = nil
+
+    }
+    
+    func cleanMap(){
+        let allAnnotations = self.mkMap.annotations
+        self.mkMap.removeAnnotations(allAnnotations)
+    }
+    
     @IBAction func saveButton(_ sender: Any) {
         let alert = CPAlertViewController()
         
@@ -27,17 +43,32 @@ class AddPlaceVC: UIViewController {
         date.dateFormat = "dd MM yyyy"
         let startDateFormat = date.string(from: startDate.date)
         let endDateFormat = date.string(from: endDate.date)
-        self.createSpotRequest(name: spotName.text!, description: spotDescription.text!, x_coordinate: 1, y_coordinate: 2,  initial_date: startDateFormat, end_date: endDateFormat)
+        self.createSpotRequest(name: spotName.text!, description: spotDescription.text!, x_coordinate: Float(coordinates!.longitude), y_coordinate: Float(coordinates!.latitude),  initial_date: startDateFormat, end_date: endDateFormat)
     
     
     }
     
     
-
+    @IBAction func createMarker(_ sender: UILongPressGestureRecognizer) {
+        
+        cleanMap()
+        
+        let point = sender.location(in: mkMap)
+        
+        let coordinate = mkMap.convert(point, toCoordinateFrom: mkMap)
+        
+        let pin = MKPointAnnotation()
+        
+        pin.coordinate = coordinate
+        
+        mkMap.addAnnotation(pin)
+        
+        coordinates = coordinate    }
     
     
+    
 
-    func createSpotRequest(name:String, description:String, x_coordinate:Int, y_coordinate:Int, initial_date:String, end_date:String){
+    func createSpotRequest(name:String, description:String, x_coordinate:Float, y_coordinate:Float, initial_date:String, end_date:String){
             let url = "http://localhost:8888/brightmaps/public/api/places"
             
             let parameters: Parameters = ["placeName": name, "description": description, "xCoordinate": x_coordinate, "yCoordinate": y_coordinate, "initialDate": initial_date, "endDate": end_date]

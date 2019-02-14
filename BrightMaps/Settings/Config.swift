@@ -44,3 +44,19 @@ func saveDataInUserDefaults(value:String, key:String){
     defaults.synchronize()
     
 }
+func clearDataInUserDefaults(key:String){
+    
+    if defaults.object(forKey: "userRegistered") != nil {
+        userRegistered = defaults.object(forKey: "userRegistered") as! [String : String]
+        userRegistered.removeValue(forKey: key)
+        
+        defaults.set(userRegistered, forKey: "userRegistered")
+        defaults.synchronize()
+    }
+    
+}
+
+func clearUserDefaults(){
+    defaults.set(nil, forKey: "userRegistered")
+    defaults.synchronize()
+}

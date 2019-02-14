@@ -14,8 +14,17 @@ class SignInVc: UIViewController {
     
 }
 
-override func viewDidAppear(_ animated: Bool) {
-    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        
+        if getDataInUserDefaults(key: "isLoged") != nil{
+            if(getDataInUserDefaults(key: "isLoged")! == "true"){
+
+                SwiftSpinner.show("...")
+                self.createLoginRequest(email: getDataInUserDefaults(key: "email")!, password: getDataInUserDefaults(key: "password")!)
+            }
+        }
+        
     }
 
 

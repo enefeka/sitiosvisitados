@@ -3,11 +3,14 @@ import Alamofire
 import UIKit
 import SwiftSpinner
 import CPAlertViewController
+import MapKit
 
 
 class SpotInfoVC: UIViewController{
     
     var idReceived: Int = 0
+    var longX: Float = 0.0
+    var latY: Float = 0.0
     
     @IBOutlet weak var spotName: UILabel!
     
@@ -17,7 +20,8 @@ class SpotInfoVC: UIViewController{
     
     @IBOutlet weak var endDate: UILabel!
     
-//    var spotTitle = ""
+    @IBOutlet weak var mkMap: MKMapView!
+    //    var spotTitle = ""
 //    var spotInfo = ""
 //    var start = ""
 //    var end = ""
@@ -59,10 +63,18 @@ class SpotInfoVC: UIViewController{
         spotDescription.text = spots[idReceived]["description"] as? String
         startDate.text = spots[idReceived]["initial_date"] as? String
         endDate.text = spots[idReceived]["end_date"] as? String
+        longX = (spots[idReceived]["x_coordinate"] as! NSNumber).floatValue
+        latY = (spots[idReceived]["y_coordinate"] as! NSNumber).floatValue
+        addMarker(latitude: latY, longitude: longX)
 
     }
     
+    func addMarker(latitude: Float, longitude: Float){
 
+        let point = MKPointAnnotation()
+        point.coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(latitude), CLLocationDegrees(longitude))
+        mkMap.addAnnotation(point)
+    }
     
     func requestSpot(id:Int, action: @escaping () -> ()){
         let url = "http://localhost:8888/brightmaps/public/api/placeData"

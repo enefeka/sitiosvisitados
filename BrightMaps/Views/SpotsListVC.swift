@@ -28,6 +28,7 @@ class SpotsListVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
 
                 
                 var arrayResult = response.result.value as! Dictionary<String, Any>
+                print(arrayResult)
 
                 switch response.result {
                 case .success:
