@@ -396,8 +396,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="WCS-XY-Mcb" kind="relationship" relationship="viewControllers" id="YxN-rQ-of8"/>
                         <segue destination="a2y-fr-7sx" kind="relationship" relationship="viewControllers" id="L22-Ea-v3P"/>
+                        <segue destination="WCS-XY-Mcb" kind="relationship" relationship="viewControllers" id="YxN-rQ-of8"/>
                         <segue destination="nyi-H5-CBV" kind="relationship" relationship="viewControllers" id="56B-zT-bvc"/>
                     </connections>
                 </tabBarController>
@@ -457,7 +457,8 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Spots List" image="ListIcon" selectedImage="ListIcon" id="R8I-rP-7vh"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableSpots" destination="leS-eL-uks" id="ekg-oF-JVO"/>
                         <outlet property="withoutResults" destination="w0o-xe-hhu" id="QWk-Ir-9sa"/>
@@ -499,7 +500,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="a2y-fr-7sx" kind="show" id="QZ9-1d-s6z"/>
+                                    <segue destination="9lU-69-yRw" kind="show" id="IgW-fP-9H4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjK-iD-qdu">
@@ -583,7 +584,7 @@
         <image name="Map" width="18.399999618530273" height="18.399999618530273"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QZ9-1d-s6z"/>
+        <segue reference="ryg-Fz-Ggc"/>
         <segue reference="Fwn-H5-fR5"/>
     </inferredMetricsTieBreakers>
 </document>

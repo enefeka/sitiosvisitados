@@ -15,9 +15,10 @@ class SignInVc: UIViewController {
 }
 
 override func viewDidAppear(_ animated: Bool) {
+    
+    }
 
 
-}
 
 @IBAction func signInButton(_ sender: UIButton) {
     

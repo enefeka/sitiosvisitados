@@ -21,12 +21,16 @@ class AddPlaceVC: UIViewController {
         if spotDescription.text == "" {
             alert.showError(title: "Write a description".localized(), buttonTitle: "OK")
         }
-       
-        self.createSpotRequest(name: spotName.text!, description: spotDescription.text!, x_coordinate: 1, y_coordinate: 2, initial_date: "2018-01-16 12:27:01", end_date: "2018-01-16 12:27:01")
+        startDate.datePickerMode = UIDatePicker.Mode.date
+        endDate.datePickerMode = UIDatePicker.Mode.date
+        let date = DateFormatter()
+        date.dateFormat = "dd MM yyyy"
+        let startDateFormat = date.string(from: startDate.date)
+        let endDateFormat = date.string(from: endDate.date)
+        self.createSpotRequest(name: spotName.text!, description: spotDescription.text!, x_coordinate: 1, y_coordinate: 2,  initial_date: startDateFormat, end_date: endDateFormat)
     
     
     }
-    
     
     
 
@@ -37,11 +41,10 @@ class AddPlaceVC: UIViewController {
             let url = "http://localhost:8888/brightmaps/public/api/places"
             
             let parameters: Parameters = ["placeName": name, "description": description, "xCoordinate": x_coordinate, "yCoordinate": y_coordinate, "initialDate": initial_date, "endDate": end_date]
-        print("aaaaaaaaaaaaaaaaaasdfasfkjafklnasnlkfaslnkasfnlasflnafs")
-        print(parameters)
+
             
             let token = getDataInUserDefaults(key:"token")
-            
+            let alert = CPAlertViewController()
             let headers: HTTPHeaders = [
                 "Authorization": token!,
                 "Accept": "application/json"
@@ -57,8 +60,7 @@ class AddPlaceVC: UIViewController {
                         switch arrayResult["code"] as! Int{
                         case 200:
                             
-
-                            print("comentario creado")
+                        self.alertUser(alertTitle: "Spot saved!", alertMessage: "")
                             
                         default:
                             
@@ -66,8 +68,7 @@ class AddPlaceVC: UIViewController {
                         }
                     case .failure:
                         
-                        print("Error :: \(String(describing: response.error))")
-                        //alert.showError(title: (String(describing: response.error), buttonTitle: "OK")
+                        alert.showError(title: "Something went wrong".localized(), buttonTitle: "OK")
                     }
                 }
             }
@@ -78,7 +79,7 @@ class AddPlaceVC: UIViewController {
             let alert = UIAlertController(title: title, message: message,   preferredStyle: .alert)
             let actionTaken = UIAlertAction(title: "Ok", style: .default) { (hand) in
                 let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                let destinationVC = storyBoard.instantiateViewController(withIdentifier: "HomeVC") as? SignInVc
+                let destinationVC = storyBoard.instantiateViewController(withIdentifier: "UITabBarController") as? UITabBarController
                 self.present(destinationVC!, animated: true, completion: nil)
                 
             }
